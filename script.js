@@ -103,6 +103,6 @@ function checkForWin() {
         setTimeout(function () {
             document.getElementById('game-over').classList.remove('d-none');
             document.getElementById('restart-btn').classList.remove('d-none');
-        }, 5000);
+        }, 500000);
     }
 }

@@ -59,7 +59,6 @@ body {
 
 table {
     border-collapse: collapse;
-    position: relative;
 }
 
 tr {
@@ -120,6 +119,12 @@ tr td:last-child {
     transform: rotate(90deg) scaleX(0.0);
 }
 
+.position-relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes zoomIn {
     from {
         opacity: 0;
@@ -129,5 +134,85 @@ tr td:last-child {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@media(max-width: 500px) {
+    .player-panel {
+        display: block;
+    }
+
+    .margin-top-16 {
+        margin-top: 16px;
+    }
+
+    table {
+        position: relative;
+    }
+
+    tr {
+        width: 270px;
+    }
+
+    td {
+        width: 90px;
+        height: 90px;
+    }
+
+    .shape {
+        width: 46px;
+        height: 46px;
+        top: 22px;
+        left: 22px;
+    }
+
+    .horizontal-line {
+        width: 270px;
+    }
+
+    .restart-btn {
+        width: 250px;
+        height: 75px;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .line-0 {
+        top: 40px !important;
+    }
+
+    .line-1 {
+        top: 137px !important;
+    }
+
+    .line-2 {
+        top: 234px !important;
+    }
+
+    .line-3 {
+        top: 140px !important;
+        right: 10px !important;
+    }
+
+    .line-4 {
+        top: 140px !important;
+        left: -91px !important;
+    }
+
+    .line-5 {
+        top: 140px !important;
+        right: -88px !important;
+    }
+
+    .line-6 {
+        top: 138px !important;
+        width: 344px !important;
+    }
+
+    .line-7 {
+        top: 136px !important;
+        width: 344px !important;
     }
 }
