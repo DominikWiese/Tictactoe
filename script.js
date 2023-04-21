@@ -30,7 +30,7 @@ function restart() {
     document.getElementById('player-2').classList.add('player-inactive');
     document.getElementById('player-1').classList.remove('player-inactive');
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 8; i++) {
         document.getElementById('line-' + i).style.transform = 'scale(0)';
 
     }
@@ -103,6 +103,6 @@ function checkForWin() {
         setTimeout(function () {
             document.getElementById('game-over').classList.remove('d-none');
             document.getElementById('restart-btn').classList.remove('d-none');
-        }, 500000);
+        }, 3000);
     }
 }
